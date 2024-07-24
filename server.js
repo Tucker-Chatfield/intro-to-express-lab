@@ -17,6 +17,10 @@ const shoes = [
   { name: "Fifty-Inch Heels", price: 175, type: "heel" }
 ];
 
+app.get('/', (req, res) => {
+  res.send('Express lab');
+});
+
 // 1. Be Polite, Greet the User
 app.get('/greetings/:username', (req, res) => {
   const username = req.params.username;
